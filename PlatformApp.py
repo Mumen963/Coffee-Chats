@@ -590,7 +590,7 @@ class PlatformApp:
                     if 1 <= choice <= len(executives):
                         selected_executive = executives[choice - 1]
 
-                        day = input("Choose a preferred day for the booking(Mon, Tue, Wed): ").strip()
+                        day = input("Choose a preferred day for the booking (Mon, Tue, Wed): ").strip()
 
                         booking = Booking(PlatformApp.find_aspiring_professional_by_name(name), selected_executive, day)
                         PlatformApp.platform.add_booking(booking)
